@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hex_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahovakim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mnazarya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 16:18:23 by mnazarya          #+#    #+#             */
 /*   Updated: 2023/02/02 15:37:14 by ahovakim         ###   ########.fr       */
