@@ -51,11 +51,3 @@ int	ft_printf(const char *str, ...)
 	va_end(arg);
 	return (count);
 }
-
-int	main(void)
-{
-	printf("%d\n", ft_printf("% 2s\n% i\n% 1d\n% d\n", "abcd", -89, -23, 46));
-	// printf("%d\n", ft_printf("% d\n", 4));
-	// printf("%d\n", ft_printf("% 45s\n", "Bareeeeeeev Boloriiiiiiin"));
-	printf(".............................................");
-}
