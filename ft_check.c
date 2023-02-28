@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahovakim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mnazarya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 20:03:58 by mnazarya          #+#    #+#             */
 /*   Updated: 2023/02/02 12:25:02 by mnazarya         ###   ########.fr       */
