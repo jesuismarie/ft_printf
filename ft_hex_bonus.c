@@ -19,23 +19,15 @@ int	ft_hex(unsigned long long n, short x)
 	count = 0;
 	if (x)
 	{
-		if (n < 16)
-			count += ft_putchar("0123456789abcdef"[n % 16]);
-		else
-		{
+		if (n >= 16)
 			count += ft_hex(n / 16, x);
-			count += ft_putchar("0123456789abcdef"[n % 16]);
-		}
+		count += ft_putchar("0123456789abcdef"[n % 16]);
 	}
 	else
 	{
-		if (n < 16)
-			count += ft_putchar("0123456789ABCDEF"[n % 16]);
-		else
-		{
+		if (n >= 16)
 			count += ft_hex(n / 16, x);
-			count += ft_putchar("0123456789ABCDEF"[n % 16]);
-		}	
+		count += ft_putchar("0123456789ABCDEF"[n % 16]);
 	}
 	return (count);
 }

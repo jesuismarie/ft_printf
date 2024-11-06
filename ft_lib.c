@@ -73,10 +73,7 @@ int	ft_putstr(char *s)
 	int	count;
 
 	if (!s)
-	{
-		write(1, "(null)", 6);
-		return (6);
-	}
+		return (write(1, "(null)", 6));
 	count = ft_strlen(s);
 	write(1, s, count);
 	return (count);
