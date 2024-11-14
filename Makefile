@@ -6,7 +6,7 @@ OBJS_B			= $(SRCS_B:.c=.o)
 RM				= rm -f
 AR				= ar rcs
 CC				= cc
-FLAGS 			= -Wall -Wextra -Werror
+FLAGS			= -Wall -Wextra -Werror
 
 .c.o: 
 				$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
@@ -21,7 +21,7 @@ clean:
 fclean:			clean
 					$(RM) $(NAME)
 
-re: 			fclean all
+re:				fclean all
 
 bonus:			$(OBJS_B)
 					$(AR) $(NAME) $(OBJS_B)
