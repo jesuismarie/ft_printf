@@ -42,13 +42,13 @@ static int	is_space(const char *str)
 	return (0);
 }
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	num;
-	
+
 	num = 0;
-	while (*str == ' ' || *str == '\t' || *str == '\f' ||
-			*str == '\r' || *str == '\n' || *str == '\v')
+	while (*str == ' ' || *str == '\t' || *str == '\f' || \
+		*str == '\r' || *str == '\n' || *str == '\v')
 		str++;
 	while (*str >= '0' && *str <= '9')
 	{

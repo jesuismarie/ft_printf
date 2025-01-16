@@ -23,9 +23,9 @@ int	is_pers(const char *str, va_list arg)
 		{
 			str++;
 			count += ft_check_flags(str, arg);
-			if (*str == ' ' || *str == 'd' || *str == 'i' 
+			if (*str == ' ' || *str == 'd' || *str == 'i' \
 				|| (*str >= 48 && *str <= 57))
-				while (*str == ' ' || *str == 'd' || *str == 'i' 
+				while (*str == ' ' || *str == 'd' || *str == 'i' \
 					|| (*str >= 48 && *str <= 57))
 					++str;
 			else

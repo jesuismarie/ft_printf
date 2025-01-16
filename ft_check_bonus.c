@@ -43,9 +43,9 @@ static int	ft_check_space(va_list arg)
 
 static int	ft_check_space_n(const char *str, va_list arg)
 {
-	int count;
+	int	count;
 	int	s;
-	
+
 	count = 0;
 	s = 0;
 	if (*str >= 48 && *str <= 57)
@@ -63,7 +63,7 @@ static int	ft_check_space_n(const char *str, va_list arg)
 		str--;
 		if (*str >= 48 && *str <= 57)
 			count += write (1, " ", 1);
-		count += ft_putstr(va_arg(arg, char*));
+		count += ft_putstr(va_arg(arg, char *));
 	}
 	return (count);
 }
