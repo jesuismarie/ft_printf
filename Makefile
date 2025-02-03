@@ -8,12 +8,12 @@ AR				= ar rcs
 CC				= cc
 FLAGS			= -Wall -Wextra -Werror
 
-.c.o: 
+%.o: %.c
 				$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
 
 all:			$(NAME)
 
-$(NAME):		$(OBJS) 
+$(NAME):		$(OBJS)
 					$(AR) $(NAME) $(OBJS)
 clean:	
 				$(RM) $(OBJS) $(OBJS_B)
@@ -23,7 +23,7 @@ fclean:			clean
 
 re:				fclean all
 
-bonus:			$(OBJS_B)
-					$(AR) $(NAME) $(OBJS_B)
+bonus:			$(OBJS) $(OBJS_B)
+					$(AR) $(NAME) $(OBJS) $(OBJS_B)
 
 .PHONY:			all clean fclean bonus re
